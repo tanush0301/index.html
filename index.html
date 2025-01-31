@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Kickz - Buy Sneakers</title>
+    <title>Fresh Kickz - Sneakers Store</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -15,22 +16,27 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="https://www.instagram.com/fresh_kickz03/" target="_blank">Instagram</a></li>
-                <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#" class="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <section class="hero">
+        <h2>🔥 Get the Freshest Kicks! 🔥</h2>
+        <p>Shop the latest sneaker drops at unbeatable prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <main id="products">
         <h2>Latest Sneakers</h2>
-        <div class="products" id="product-list">
-            <!-- Products will be inserted here by script.js -->
+        <div class="products-container">
+            <!-- Products will be inserted here dynamically -->
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Fresh Kickz. Follow us on <a href="https://www.instagram.com/fresh_kickz03/" target="_blank">Instagram</a>.</p>
+        <p>&copy; 2025 Fresh Kickz | Follow us on <a href="https://www.instagram.com/fresh_kickz03/" target="_blank">Instagram</a></p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
